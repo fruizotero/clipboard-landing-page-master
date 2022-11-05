@@ -1,0 +1,362 @@
+  html {
+      box-sizing: border-box;
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-size: 18px;
+      scroll-behavior: smooth;
+      --strong-cyan-color: #26baa4;
+      --light-blue-color: #6173ff;
+      --dark-grayish-blue-color: #4c545d;
+      --grayish-blue-color: #9fabb2;
+      --white-color: #fff;
+  }
+
+  *,
+  *:before,
+  *:after {
+      box-sizing: inherit;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      width: 100%;
+      min-height: 100vh;
+  }
+
+  img,
+  video {
+      max-width: 100%;
+      height: auto;
+  }
+
+
+  header {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      width: 100%;
+      padding: 15vh 0;
+      background-image: url(../images/bg-header-mobile.png);
+      background-size: 100% 100%;
+
+  }
+
+  .logo {
+      display: flex;
+      justify-content: center;
+  }
+
+  .article {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  }
+
+  .padding--horizontal {
+      padding: 0 10%;
+  }
+
+  .article__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+  }
+
+  .article__paragraph {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      color: var(--grayish-blue-color);
+  }
+
+  .article__title--h1 {
+      font-size: 1.6rem;
+      font-weight: 600;
+
+  }
+
+  .article__title--h2 {
+      font-size: 1.4rem;
+  }
+
+  .article--gap-3 {
+      gap: 3rem;
+  }
+
+  .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+  }
+
+  .button {
+      width: 100%;
+      padding: 0.75rem 0;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--white-color);
+      background-color: var(--strong-cyan-color);
+      border-radius: 2rem;
+      box-shadow: 0 0.15rem 0rem 0.1rem #28a08e;
+
+  }
+
+  .button--blue {
+      background-color: var(--light-blue-color);
+      box-shadow: 0 0.1rem 0rem 0.1rem #3e50da;
+
+  }
+
+  .section {
+      padding: 0 10%;
+      padding-bottom: 15vh;
+  }
+
+  .article__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+  }
+
+  .article__aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+  }
+
+  .article__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding-bottom: 5vh;
+  }
+
+  .card {
+     
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  }
+
+  .card__figure {
+      padding-bottom: 1rem;
+  }
+
+  .card__title {
+      width: max-content;
+      font-size: 1.5rem;
+  }
+
+  .card__paragraph {
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      color: var(--grayish-blue-color);
+      text-align: center;
+  }
+
+  .article__logos {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+  }
+
+  footer {
+      background-color: #ecf3f7;
+  }
+
+  .footer__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 5vh 0;
+  }
+
+  .logo__image--footer {
+      width: 40%;
+  }
+
+  .footer__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem
+  }
+
+  .footer__link {
+      text-decoration: none;
+      color: var(--dark-grayish-blue-color);
+  }
+
+  .footer__social {
+      display: flex;
+      gap: 2rem;
+  }
+
+  .footer__icons {
+      width: 1.5rem;
+      height: 1.5rem;
+  }
+
+  @media screen and (min-width: 30em) {
+
+      header {
+          background-image: url(../images/bg-header-desktop.png);
+      }
+
+      .logo__image {
+          width: 8%;
+      }
+
+      .article__title--h1 {
+          font-size: 2rem;
+      }
+
+      .article__title--h2 {
+          font-size: 1.5rem;
+      }
+
+      .article__title--h3 {
+          font-size: 1rem;
+      }
+
+      .article__paragraph--normal {
+          width: 70%;
+          font-size: 0.9rem;
+      }
+
+      .article__paragraph--little {
+          width: 60%;
+          font-size: 0.85rem;
+          line-height: 1.2rem;
+      }
+
+      .padding--horizontal-20 {
+          padding-left: 20%;
+          padding-right: 20%;
+      }
+
+      .padding--horizontal-20-right {
+          padding: 0;
+          padding-right: 20%;
+      }
+
+      .button {
+          width: auto;
+          padding: 0.75rem 2rem;
+          font-size: 0.75rem;
+      }
+
+      .section--1 {
+          padding-left: 0;
+          padding-right: 0;
+      }
+
+      .article__info {
+          flex-direction: row;
+      }
+
+      .article__info--column {
+          flex-direction: column;
+      }
+
+      .article__aside {
+          align-items: flex-start;
+      }
+
+      .article__text--left {
+          gap: 0.5rem;
+          align-items: flex-start;
+          text-align: left;
+      }
+
+      .article__cards {
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+
+      }
+
+      .card {
+        width: 33.3333%;
+          gap: 0.5rem;
+      }
+
+      .card__figure {
+          width: 2.5rem;
+          height: 2.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+      }
+
+      .card__title {
+          font-size: 1rem;
+      }
+
+      .card__paragraph {
+          width: 90%;
+          font-size: 0.8rem;
+          line-height: 1rem;
+      }
+
+      .article__logos {
+          flex-direction: row;
+          justify-content: space-evenly;
+      }
+
+      .footer__container {
+          position: relative;
+          flex-direction: row;
+          padding: 5% 10%;
+      }
+
+      .logo__image--footer {
+          width: 40%;
+      }
+
+      .footer__links {
+          display: grid;
+          grid-auto-flow: column;
+          align-items: start;
+          grid-template-columns: repeat(3, max-content);
+          grid-template-rows: repeat(2, 1fr);
+          column-gap: 3rem;
+      }
+
+      .footer__link {
+          font-size: 0.9rem;
+      }
+
+      .footer__social {
+          position: absolute;
+          top: 50%;
+          right: 10%;
+          gap: 1rem;
+          transform: translate(0, -50%);
+      }
+
+      .footer__icons {
+          width: 0.75rem;
+          height: 0.75rem;
+      }
+
+  }
